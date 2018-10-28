@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation- có 7 giá trị để quản lý chuyển động</title>
+    <style>
+        #pig1{
+            position:fixed;
+            animation:linear infinite alternate;
+            animation-name: run;
+            animation-duration: 15s;
+        }
+        @keyframes run {
+            0% { left: 0;}
+            50%{ left : 90%;}
+            100%{ left: 0;}
+        }
+
+        #pig2{
+            position:fixed;
+            animation:linear infinite alternate;
+            animation-name: example;
+            animation-duration: 15s;
+        }
+        @keyframes example {
+            0% { right: 0;}
+            50%{ right : 90%;}
+            100%{ right: 0;}
+        }
+        img{
+            width: 100px;
+            height: auto;
+        }
+        /*#pig{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*position: relative;*/
+            /*animation-name: example; !*example là tên hàmkeyframes*!*/
+            /*animation-duration: 5s;*/
+            /*animation-delay: 2s;!*delay 2s trước khi chạy*!*/
+            /*animation-iteration-count: infinite; !*chạy liên tục*!*/
+            /*animation-fill-mode: backwards; !*trả về trạng thái ban đầu hàm from*!*/
+            /*animation-direction: reverse; !*chạy ngược lại với hàm*!*/
+
+            /*!*none~backwards; both: chạy từ trạng thái thứ 2; *!*/
+        /*}*/
+
+        /*!*@keyframes đc coi là 1 hàm và bắt buộc có 2 phần tử là from và to    *!*/
+
+        /*@keyframes example {*/
+            /*0% {*/
+                /*left: 0;*/
+            /*}*/
+            /*50% {*/
+                /*right: 0;*/
+            /*}*/
+            /*100% {*/
+                /*left: 0;*/
+            /*, webkit-transform: scaleX(-1);*/
+            /*}*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div >
+    <img id="pig1" src="http://rs1262.pbsrc.com/albums/ii614/zoldyck2/qoobee/5-100-gan-num.gif~c200" alt="Heo xinh">
+    <img id="pig2" src="http://rs1262.pbsrc.com/albums/ii614/zoldyck2/qoobee/5-100-gan-num.gif~c200" alt="Heo xinh">
+
+</div>
+</body>
+</html>
