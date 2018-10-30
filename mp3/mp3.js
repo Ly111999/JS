@@ -6,14 +6,18 @@ xhttp.onreadystatechange = function () {
         console.log(xhttp.responseText);
         var content = '';
         for (var i = 0; i < objSong.length; i++) {
-            var itemSong = ' <div class="mp3-item" style="display: block">\n' +
-
-                '        <div class="hello">' + (i + 1) + '</div>\n' +
-                '        <img class="hello" onclick="GetSong(\'' + objSong[i].link + '\')" width="100px" height="70px" src="' + objSong[i].thumbnail + '" alt="">\n' +
-                '        <div class="hello">' + objSong[i].name + '</div>\n' +
-                '        <div class="hello">' + objSong[i].singer + '</div>\n' +
-
+            var itemSong = '  <div class="mp3-item">\n' +
+                '        <div class="col-2 stt">'+ (i+1)+'</div>\n' +
+                '        <div class="col-3 thumbnail">\n' +
+                '            <img onclick="GetSong(\'' + objSong[i].link + '\')" width="100px" height="70px" src="' + objSong[i].thumbnail + '" alt="">\n' +
+                '        </div>\n' +
+                '        <div class="col-5">\n' +
+                '            <div class="song-name">'+ objSong[i].name+'</div>\n' +
+                '            <div class="song-singer">'+ objSong[i].singer  +'</div>\n' +
+                '        </div>\n' +
+                '        <div class="col-2"></div>\n' +
                 '    </div>';
+
             content += itemSong;
         }
         document.getElementById('mp3').innerHTML = content;
@@ -25,6 +29,6 @@ xhttp.send();
 
 function GetSong(srcSong) {
     var play = document.getElementById('play');
-    var link = document.getElementById('src-song');
+
     play.src = srcSong;
 }

@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        .hello{
-            display: inline-block;
+        *{
+            box-sizing: border-box;
         }
-        * {
-            clear: both;
+        .container {
+            margin: 0 40px 50px 0;
         }
 
-        img {
-            float: left;
+        .mp3-item:after {
+            clear: both;
+            content: '';
+            display: table;
+        }
+
+        .mp3-item {
+            border: 1px solid rgba(13, 23, 20, 0.2);
+            border-radius: 10px;
+            display: flex;
+            padding: 6px;
+        }
+
+        * {
+            clear: both;
         }
 
         audio {
@@ -24,11 +37,54 @@
             width: 100%;
         }
 
+        .stt {
+            text-align : center;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+
+
+        .song-name{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
-<div id="mp3">
-
+<h2>My music</h2>
+<div id="mp3" class="container">
+    <!--<div class="mp3-item">-->
+        <!--<div class="col-2 stt">STT</div>-->
+        <!--<div class="col-3 thumbnail">-->
+            <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR039B-PFuEidgjPSnD1-R0rrnb6zy8MHcb78ir_O5RmyvM-r0QnA">-->
+        <!--</div>-->
+        <!--<div class="col-5">-->
+            <!--<div class="song-name">jhgfds</div>-->
+            <!--<div class="song-singer">;lkjytrew</div>-->
+        <!--</div>-->
+        <!--<div class="col-2"></div>-->
+    <!--</div>-->
 </div>
 <audio controls autoplay="autoplay" id="play">
     <source id="src-song" src="" type="audio/mpeg">
