@@ -24,6 +24,6 @@ xhttp.send();
 function GetSong(srcSong) {
     var play = document.getElementById('play');
     var link = document.getElementById('src-song');
-    link.src = srcSong;
+    play.src = srcSong;
     
 }
