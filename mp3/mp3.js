@@ -7,10 +7,12 @@ xhttp.onreadystatechange = function () {
         var content = '';
         for (var i = 0; i < objSong.length; i++) {
             var itemSong = ' <div class="mp3-item" style="display: block">\n' +
-                '        <div>'+ (i+1) +'</div>\n' +
-                '        <img onclick="GetSong(\'' + objSong[i].link +'\')" width="100px" height="70px" src="'+ objSong[i].thumbnail+'" alt="">\n' +
-                '        <div>' + objSong[i].name + '</div>\n' +
-                '        <div>' + objSong[i].singer + '</div>\n' +
+
+                '        <div class="hello">' + (i + 1) + '</div>\n' +
+                '        <img class="hello" onclick="GetSong(\'' + objSong[i].link + '\')" width="100px" height="70px" src="' + objSong[i].thumbnail + '" alt="">\n' +
+                '        <div class="hello">' + objSong[i].name + '</div>\n' +
+                '        <div class="hello">' + objSong[i].singer + '</div>\n' +
+
                 '    </div>';
             content += itemSong;
         }
@@ -25,5 +27,4 @@ function GetSong(srcSong) {
     var play = document.getElementById('play');
     var link = document.getElementById('src-song');
     link.src = srcSong;
-    play.play();
 }
