@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        .mp3-item {
-            display: inline-block;
-        }
-
         * {
             clear: both;
         }
@@ -17,13 +13,20 @@
         img {
             float: left;
         }
+
+        audio {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 <div id="mp3">
 
 </div>
-<audio controls autoplay="autoplay">
+<audio controls autoplay="autoplay" id="play">
     <source id="src-song" src="" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
