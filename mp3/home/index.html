@@ -24,6 +24,7 @@
             border-radius: 10px;
             display: flex;
             padding: 6px;
+            margin: 0 0 10px 0;
         }
 
         * {
@@ -41,6 +42,7 @@
             text-align : center;
             font-size: 23px;
             font-weight: bold;
+            margin-top: 20px;
         }
 
 
@@ -69,21 +71,31 @@
                 width: 100%;
             }
         }
+
+        .user a {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
-<h2>My music</h2>
+<div>
+    <h2>My music</h2>
+    <span class="user">
+        <a href="../register/register.html">Register</a> |
+        <a href="../login/login.html">Login</a>
+    </span>
+</div>
 <div id="mp3" class="container">
     <!--<div class="mp3-item">-->
-        <!--<div class="col-2 stt">STT</div>-->
-        <!--<div class="col-3 thumbnail">-->
-            <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR039B-PFuEidgjPSnD1-R0rrnb6zy8MHcb78ir_O5RmyvM-r0QnA">-->
-        <!--</div>-->
-        <!--<div class="col-5">-->
-            <!--<div class="song-name">jhgfds</div>-->
-            <!--<div class="song-singer">;lkjytrew</div>-->
-        <!--</div>-->
-        <!--<div class="col-2"></div>-->
+    <!--<div class="col-2 stt">STT</div>-->
+    <!--<div class="col-3 thumbnail">-->
+    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR039B-PFuEidgjPSnD1-R0rrnb6zy8MHcb78ir_O5RmyvM-r0QnA">-->
+    <!--</div>-->
+    <!--<div class="col-5">-->
+    <!--<div class="song-name">jhgfds</div>-->
+    <!--<div class="song-singer">;lkjytrew</div>-->
+    <!--</div>-->
+    <!--<div class="col-2"></div>-->
     <!--</div>-->
 </div>
 <audio controls autoplay="autoplay" id="play">
