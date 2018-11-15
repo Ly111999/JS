@@ -1,0 +1,11 @@
+header{
+    background-image: url("https://hinhnendep.xyz/wp-content/uploads/2016/08/hinh-nen-anime-chibi-de-thuong-15.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+}
+header div{
+    display: inline-block;
+}

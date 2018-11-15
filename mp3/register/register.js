@@ -49,7 +49,6 @@ function postRegisterDate(jsonData) {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 201) {
             var member = JSON.parse(xhttp.responseText);
-            alert(member.gender);
         }
     }
     xhttp.open('POST', REGISTER_API, true);

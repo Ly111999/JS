@@ -3,63 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+
 </head>
-<style>
-    label {
-        display: inline-block;
-        width: 80px;
-    }
+<header>
+    <a href="../home/index.html">
+        <img width="80px" height="auto" src="https://mbtskoudsalg.com/images/music-png-download-8.png" alt="logo">
+    </a>
+    <div class="nav">
+        <div class="search-container">
+            <form action="">
+                <input class="search" type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../home/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../home/index.html">
+                        BXH
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">My Song</a>
+                    <div class="dropdown-content">
+                        <a href="../mySong/mySong.html">My Song</a>
+                        <a href="../createSong/create.html">Create Song</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="../login/login.html">Sign In</a>
+                        <a href="../register/register.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    .form-control {
-        border-radius: 3px;
-        height: 20px;
-        margin: 7px;
-    }
-
-    .danger-text {
-        color: red;
-    }
-
-    .hidden-text {
-        display: none;
-    }
-
-    .container {
-        width: 50%;
-        height: auto;
-        margin: 200px auto 0;
-        border: 1px black solid;
-        padding: 0 10px 20px;
-        background: floralwhite;
-    }
-
-    .form-group {
-        width: 50%;
-        margin: auto;
-    }
-</style>
+</header>
 <body>
 <div class="container">
     <h1>Login</h1>
-    <form action="" name="form-login">
+    <form action="" name="form-login" id="login-form">
         <div class="form-group">
-            <label>Email</label>
-            <input type="text" name="email" class="form-control">
-            <span class="danger-text hidden-text"></span>
+            <input type="text" name="email" class="form-control" placeholder="Email">
+            <!--<div class="danger-text hidden-text"></div>-->
         </div>
         <div class="form-group">
-            <label>Password</label>
-            <input type="password" name="password" class="form-control">
-            <span class="danger-text hidden-text"></span>
+            <input type="password" name="password" class="form-control" placeholder="Password">
+            <!--<div class="danger-text hidden-text"></div>-->
         </div>
         <div class="form-group">
             <label></label>
-            <input type="button" name="btn-login" value="Login" class="form-control">
-            <input type="reset" name="btn-reset" value="Reset" class="form-control">
+            <input type="button" name="btn-login" id="btn-log" value="Login" class="btn">
         </div>
+
     </form>
 
 </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.min.js"></script>
 <script src="login.js"></script>
 
 </body>

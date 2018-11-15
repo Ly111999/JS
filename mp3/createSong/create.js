@@ -17,7 +17,6 @@ if (btnCreate != null){
             author : txtAuthor.value,
             link : txtLink.value
         }
-        alert(1);
         var jsDataSong = JSON.stringify(jsSong);
         doCreateSong(jsDataSong);
     }

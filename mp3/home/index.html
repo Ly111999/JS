@@ -4,104 +4,66 @@
     <meta charset="UTF-8">
     <title>My music</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .container {
-            margin: 0 40px 50px 0;
-        }
-
-        .mp3-item:after {
-            clear: both;
-            content: '';
-            display: table;
-        }
-
-        .mp3-item {
-            border: 1px solid rgba(13, 23, 20, 0.2);
-            border-radius: 10px;
-            display: flex;
-            padding: 6px;
-            margin: 0 0 10px 0;
-        }
-
-        * {
-            clear: both;
-        }
-
-        audio {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .stt {
-            text-align : center;
-            font-size: 23px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-
-
-        .song-name{
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
-        .col-3 {width: 25%;}
-        .col-4 {width: 33.33%;}
-        .col-5 {width: 41.66%;}
-        .col-6 {width: 50%;}
-        .col-7 {width: 58.33%;}
-        .col-8 {width: 66.66%;}
-        .col-9 {width: 75%;}
-        .col-10 {width: 83.33%;}
-        .col-11 {width: 91.66%;}
-        .col-12 {width: 100%;}
-
-        @media only screen and (max-width: 768px) {
-            /* For mobile phones: */
-            [class*="col-"] {
-                width: 100%;
-            }
-        }
-
-        .user a {
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-    <h2>My music</h2>
-    <span class="user">
-        <a href="../register/register.html">Register</a> |
-        <a href="../login/login.html">Login</a>
-    </span>
+<header>
+    <a href="../home/index.html">
+        <img width="80px" height="auto" src="https://mbtskoudsalg.com/images/music-png-download-8.png" alt="logo">
+    </a>
+    <div class="nav">
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="../home/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../home/index.html">
+                        BXH
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">My Song</a>
+                    <div class="dropdown-content">
+                        <a href="../mySong/mySong.html">My Song</a>
+                        <a href="../createSong/create.html">Create Song</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="../login/login.html">Sign In</a>
+                        <a href="../register/register.html">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+<div class="background">
+    <h1>Home</h1>
 </div>
-<div id="mp3" class="container">
-    <!--<div class="mp3-item">-->
-    <!--<div class="col-2 stt">STT</div>-->
-    <!--<div class="col-3 thumbnail">-->
-    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR039B-PFuEidgjPSnD1-R0rrnb6zy8MHcb78ir_O5RmyvM-r0QnA">-->
-    <!--</div>-->
-    <!--<div class="col-5">-->
-    <!--<div class="song-name">jhgfds</div>-->
-    <!--<div class="song-singer">;lkjytrew</div>-->
-    <!--</div>-->
-    <!--<div class="col-2"></div>-->
-    <!--</div>-->
-</div>
-<audio controls autoplay="autoplay" id="play">
-    <source id="src-song" src="" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+
+<main>
+    <div id="mp3" class="container">
+
+    </div>
+    <audio controls autoplay="autoplay" id="play">
+        <source id="src-song" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</main>
+
 <script src="mp3.js"></script>
 
 </body>
