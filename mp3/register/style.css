@@ -4,7 +4,8 @@
 
 header {
     width: 100%;
-    background-color: #1FC728;
+    height: 50px;
+    background-color: #1C1C1C;
     position: fixed;
     left: 0;
     top: 0;
@@ -12,19 +13,21 @@ header {
 
 header img {
     margin-left: 15%;
+    margin-top: 7px;
 }
 
 body {
     background-image: url("http://www.greenakersent.com/img/backgroundWelcome.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 620px;
+    background-size: cover;
+    width: 95%;
+    height: 634px;
 }
 
 .nav {
     margin-left: -15%;
-    margin-top: -70px;
+    margin-top: -63px;
     display: flex;
 }
 
@@ -62,7 +65,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1FC728;
+    background-color: #1C1C1C;
     min-width: 120px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -92,9 +95,17 @@ ul li a:hover:not(.active) {
     color: white;
 }
 
+.menu ul li a:hover{
+    color: #a845de;
+}
+
 .search-container {
     margin-left: 40%;
     padding-top: 11px;
+
+}
+.search{
+    height: 29px;
 }
 
 h1 {
@@ -162,14 +173,6 @@ input[type=radio]{
     opacity: 1;
 }
 
-.danger-text {
-    color: red;
-}
-
-.hidden-text {
-    display: none;
-}
-
 .already {
     margin-top: 12px;
 }
@@ -186,5 +189,13 @@ input[type=radio]{
 .form-group {
     width: 50%;
     margin: auto;
+}
+
+.gender{
+    color: #ffffff;
+    padding: 8px 10px;
+}
+.already{
+    color: #ffffff;
 }
 

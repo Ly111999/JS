@@ -11,7 +11,7 @@
 <body>
 <header>
     <a href="../home/index.html">
-        <img width="80px" height="auto" src="https://mbtskoudsalg.com/images/music-png-download-8.png" alt="logo">
+        <img width="108px" height="36" src="https://static-zmp3.zadn.vn/skins/zmp3-v5.1/images/logo.png" alt="logo">
     </a>
     <div class="nav">
         <div class="search-container">
@@ -55,7 +55,7 @@
 <!--</div>-->
 <div class="container">
     <h1>Create Song</h1>
-    <form action="" name="form-create-song">
+    <form action="" name="form-create-song" id="create-song">
         <div class="form-group">
             <input type="text" name="name" class="form-control" placeholder="Song name">
         </div>
@@ -75,11 +75,14 @@
             <input type="text" name="link" class="form-control" placeholder="Link">
         </div>
         <div class="form-group" style="margin: 8px 294px">
-            <input type="button" name="btn-submit" value="Submit" class="btn">
+            <input type="submit" name="btn-submit" value="Submit" class="btn">
             <input type="reset" name="btn-reset" value="Reset" class="btn">
         </div>
     </form>
 </div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/additional-methods.min.js"></script>
 <script src="create.js"></script>
 </body>
 </html>

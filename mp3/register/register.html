@@ -5,18 +5,20 @@
     <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
     <a href="../home/index.html">
-        <img width="80px" height="auto" src="https://mbtskoudsalg.com/images/music-png-download-8.png" alt="logo">
+        <img width="108px" height="36" src="https://static-zmp3.zadn.vn/skins/zmp3-v5.1/images/logo.png" alt="logo">
+
     </a>
     <div class="nav">
         <div class="search-container">
             <form action="">
-                <input type="text" placeholder="Search.." name="search">
+                <input class="search" type="text" placeholder="Search.." name="search">
             </form>
         </div>
         <div class="menu">
@@ -52,7 +54,7 @@
 </header>
 <div class="container">
     <h1>Register</h1>
-    <form action="" name="form-register">
+    <form action="" name="form-register" id="register-form">
         <div class="form-group">
             <input type="text" name="firstName" class="form-control" placeholder="First name">
         </div>
@@ -74,7 +76,7 @@
         <div class="form-group">
             <input type="text" name="avatar" class="form-control" placeholder="Avatar">
         </div>
-        <div class="form-group">
+        <div class="form-group gender">
             <label>Gender</label>
             <input style="color: white" type="radio" name="gender" value="1" checked> Male
             <input type="radio" name="gender" value="0"> Female
@@ -88,8 +90,8 @@
         </div>
         <div class="form-group" style="margin: 8px 180px">
             <label>&nbsp;</label>
-            <input  type="button" name="btn-submit" value="Submit" class="btn">
-            <input  type="reset" name="btn-reset" value="Reset" class="btn">
+            <input type="submit" name="btn-submit" value="Submit" class="btn">
+            <input type="reset" name="btn-reset" value="Reset" class="btn">
 
         </div>
         <div class="already form-group">
@@ -100,6 +102,9 @@
         </div>
     </form>
 </div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/additional-methods.min.js"></script>
 <script src="register.js"></script>
 
 </body>
